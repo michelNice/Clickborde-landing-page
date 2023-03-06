@@ -6,3 +6,37 @@
   box-sizing: border-box;
 }
 
+body{
+  font-size:1.125rem;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+#hero{
+  background-image:url(/img/bg-header-desktop.png);
+  height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+ 
+
+
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    flex-direction: column;
+
+    p{
+      width:60%;
+      margin: auto;
+      color: c.color(--Grayish-Blue);
+      padding: 2rem;
+    }
+
+    img{padding-bottom:4rem;}
+  }
+}

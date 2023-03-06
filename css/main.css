@@ -1,7 +1,66 @@
+/*********************/
+/*BUTTON COLORS*/
+/*********************/
+/*********************/
+/*BUTTON SHERE*/
+/*********************/
+.btn-mac, .btn-ios {
+  padding: 0.8rem 2.5rem;
+  display: inline-block;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem;
+  opacity: 10;
+  transition: all 0.3s;
+  text-decoration: none;
+  border-radius: 6.25rem;
+}
+.btn-mac:hover, .btn-ios:hover {
+  opacity: 0.3;
+}
+
+.btn-ios {
+  background: hsl(171, 66%, 44%);
+}
+.btn-mac {
+  background: hsl(233, 100%, 69%);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-size: 1.125rem;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+#hero {
+  background-image: url(/img/bg-header-desktop.png);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+#hero .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  flex-direction: column;
+}
+#hero .content p {
+  width: 60%;
+  margin: auto;
+  color: hsl(201, 11%, 66%);
+  padding: 2rem;
+}
+#hero .content img {
+  padding-bottom: 4rem;
 }
 
 /*# sourceMappingURL=main.css.map */

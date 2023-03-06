@@ -1,0 +1,45 @@
+/*********************/
+   /*BUTTON COLORS*/
+/*********************/
+$colors:(
+    --strong-cyan:hsl(171, 66%, 44%),
+    --light-blue:hsl(233, 100%, 69%),
+    --dark-grayish:hsl(210, 10%, 33%),
+    --Grayish-Blue:hsl(201, 11%, 66%)
+);
+
+@function color($colorr){
+    @return map-get($colors,$colorr)
+};
+/*********************/
+   /*BUTTON SHERE*/
+/*********************/
+
+
+%btn-share{
+    padding:0.8rem 2.5rem;
+    display: inline-block;
+    color:#fff;
+    font-size:1rem;
+    font-weight:600;
+    margin:1rem;
+    opacity:10;
+    transition:all 0.3s;
+    text-decoration:none;
+    border-radius: 6.25rem;
+    &:hover{
+        opacity:0.3;
+    }
+}
+
+.btn{
+   &-ios{
+        background: color( --strong-cyan);
+        @extend %btn-share;
+   }
+   &-mac{
+     @extend %btn-share;
+     background:color(--light-blue);
+   }
+  }
+  
