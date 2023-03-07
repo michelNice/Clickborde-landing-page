@@ -1,3 +1,6 @@
+/*********************/
+   /*SETTING UP*/
+/*********************/
 @use '../scss/global' as c;
 
 *{
@@ -10,7 +13,10 @@ body{
   font-size:1.125rem;
   font-family: 'Bai Jamjuree', sans-serif;
 }
-
+@mixin flex-columns{
+  display:flex;
+  justify-content:space-between;
+}
 
 #hero{
   background-image:url(/img/bg-header-desktop.png);
@@ -18,8 +24,6 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-
- 
 
 
   .content{
@@ -34,9 +38,58 @@ body{
       width:60%;
       margin: auto;
       color: c.color(--Grayish-Blue);
-      padding: 2rem;
+      padding:2rem;
     }
 
     img{padding-bottom:4rem;}
   }
+}
+#section-desktop{
+  .flex-columns{
+    @include flex-columns();
+    padding:5rem 0;
+    .box{
+      margin:2rem 6rem;
+      h3{padding:0.8rem 0;}
+    }
+  }
+}
+/*********************/
+      /*MOBILE*/
+/*********************/
+
+@media(max-width:48rem){
+  body{font-size:1rem;}
+
+@mixin flex-columns{
+  flex-direction:column;
+}
+  
+#hero{
+  background-image:url(/img/bg-header-mobile.png);
+  .content{
+    //img{width: 100%;}
+    p{
+      width:100%;
+      padding: 2rem;
+    }
+    h1{font-size:1.8rem;}
+  }
+}
+
+#section-desktop{
+  .flex-columns{
+    @include flex-columns();
+
+    padding:5rem 0;
+    img{width: 100%;}
+    .box{
+      margin: 2rem 1rem;
+      h3{padding: 0.8rem 0;}
+    }
+  }
+}
+
+//.img-two{width:50px;}
+
 }

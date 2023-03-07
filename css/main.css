@@ -27,6 +27,42 @@
   background: hsl(233, 100%, 69%);
 }
 
+/*********************/
+/*SETTING GLOBAL*/
+/*********************/
+p {
+  color: hsl(201, 11%, 66%);
+}
+
+.row {
+  text-align: center;
+  margin: auto;
+  padding-top: 4rem 0;
+}
+.row p {
+  width: 50%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.img {
+  width: 43.75rem;
+}
+
+/*********************/
+/*MOBILE GLOBAL*/
+/*********************/
+@media (max-width: 46rem) {
+  .row p {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}
+/*********************/
+/*SETTING UP*/
+/*********************/
 * {
   padding: 0;
   margin: 0;
@@ -61,6 +97,50 @@ body {
 }
 #hero .content img {
   padding-bottom: 4rem;
+}
+
+#section-desktop .flex-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+#section-desktop .flex-columns .box {
+  margin: 2rem 6rem;
+}
+#section-desktop .flex-columns .box h3 {
+  padding: 0.8rem 0;
+}
+
+/*********************/
+/*MOBILE*/
+/*********************/
+@media (max-width: 48rem) {
+  body {
+    font-size: 1rem;
+  }
+  #hero {
+    background-image: url(/img/bg-header-mobile.png);
+  }
+  #hero .content p {
+    width: 100%;
+    padding: 2rem;
+  }
+  #hero .content h1 {
+    font-size: 1.8rem;
+  }
+  #section-desktop .flex-columns {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+  #section-desktop .flex-columns img {
+    width: 100%;
+  }
+  #section-desktop .flex-columns .box {
+    margin: 2rem 1rem;
+  }
+  #section-desktop .flex-columns .box h3 {
+    padding: 0.8rem 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -14,8 +14,6 @@ $colors:(
 /*********************/
    /*BUTTON SHERE*/
 /*********************/
-
-
 %btn-share{
     padding:0.8rem 2.5rem;
     display: inline-block;
@@ -42,4 +40,34 @@ $colors:(
      background:color(--light-blue);
    }
   }
-  
+/*********************/
+    /*SETTING GLOBAL*/
+/*********************/
+p{color:color(--Grayish-Blue);}
+.row{
+    text-align: center;
+    margin: auto;
+    padding-top:4rem 0;
+    p{
+        width:50%;
+        margin: auto;
+        padding:2rem 0;
+    }
+}
+
+.img{width:43.75rem;}
+
+
+/*********************/
+   /*MOBILE GLOBAL*/
+/*********************/
+
+@media(max-width:46rem){
+    .row{
+        p{width:100%;}
+    }
+
+    img{width:100%;}
+}
+
+
