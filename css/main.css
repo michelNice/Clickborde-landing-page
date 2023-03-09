@@ -56,7 +56,7 @@ p {
   .row p {
     width: 100%;
   }
-  img {
+  .img {
     width: 100%;
   }
 }
@@ -74,6 +74,9 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
 }
 
+/*********************/
+/*HERO*/
+/*********************/
 #hero {
   background-image: url(/img/bg-header-desktop.png);
   height: 100vh;
@@ -99,6 +102,9 @@ body {
   padding-bottom: 4rem;
 }
 
+/*********************/
+/*DESKTOP*/
+/*********************/
 #section-desktop .flex-columns {
   display: flex;
   justify-content: space-between;
@@ -109,6 +115,45 @@ body {
 }
 #section-desktop .flex-columns .box h3 {
   padding: 0.8rem 0;
+}
+
+/*********************/
+/*MOBILE*/
+/*********************/
+#section-mobile .img {
+  display: block;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+/*********************/
+/*WORKFLOW*/
+/*********************/
+#section-workflow .flex-columns {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 5rem 0;
+  margin-right: 7rem;
+}
+#section-workflow .flex-columns .box h3 {
+  padding: 1rem 0;
+}
+
+/*********************/
+/*LOGOS*/
+/*********************/
+#section-logos {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem 0;
+}
+
+#section-keyboard {
+  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*********************/
@@ -140,6 +185,21 @@ body {
   }
   #section-desktop .flex-columns .box h3 {
     padding: 0.8rem 0;
+  }
+  #section-workflow .flex-columns {
+    flex-direction: column;
+    padding: 1;
+    margin-right: 0;
+  }
+  #section-workflow .flex-columns .box {
+    margin-top: 3rem;
+  }
+  #section-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+  #section-logos figure {
+    padding: 3rem 0;
   }
 }
 

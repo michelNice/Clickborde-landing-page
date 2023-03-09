@@ -17,7 +17,9 @@ body{
   display:flex;
   justify-content:space-between;
 }
-
+/*********************/
+    /*HERO*/
+/*********************/
 #hero{
   background-image:url(/img/bg-header-desktop.png);
   height:100vh;
@@ -44,6 +46,9 @@ body{
     img{padding-bottom:4rem;}
   }
 }
+/*********************/
+    /*DESKTOP*/
+/*********************/
 #section-desktop{
   .flex-columns{
     @include flex-columns();
@@ -53,6 +58,43 @@ body{
       h3{padding:0.8rem 0;}
     }
   }
+}
+/*********************/
+      /*MOBILE*/
+/*********************/
+#section-mobile{
+  .img{
+    display: block;
+    margin: auto;
+    padding-top:4rem;
+  }
+}
+/*********************/
+    /*WORKFLOW*/
+/*********************/
+#section-workflow{
+  .flex-columns{
+    @include flex-columns();
+    text-align: center;
+    padding:5rem 0;
+    margin-right:7rem;
+    .box{
+      h3{padding:1rem 0;}
+    }
+  }
+}
+/*********************/
+      /*LOGOS*/
+/*********************/
+#section-logos{
+  @include flex-columns();
+  padding-top:5rem 0;
+}
+#section-keyboard{
+  padding:10rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 /*********************/
       /*MOBILE*/
@@ -90,6 +132,20 @@ body{
   }
 }
 
-//.img-two{width:50px;}
+#section-workflow{
+  .flex-columns{
+    @include flex-columns();
+    padding:1;
+    margin-right:0;
+    .box{margin-top:3rem;}
+  }
+}
+
+#section-logos{
+  @include flex-columns();
+  align-items: center;
+  figure{padding:3rem 0;}
+}
+
 
 }
