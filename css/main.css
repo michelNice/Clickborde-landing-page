@@ -186,7 +186,7 @@ body {
 }
 #footer #footer-nav .box:last-child li a {
   font-size: 1.5rem;
-  color: hsl(201, 11%, 66%);
+  color: hsl(210, 10%, 33%);
 }
 #footer #footer-nav .box:last-child li a:hover {
   color: hsl(171, 66%, 44%);
@@ -260,6 +260,41 @@ body {
   }
   #section-keyboard .box {
     flex-direction: column;
+  }
+  #footer #footer-nav {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+  }
+  #footer #footer-nav .box:nth-child(1),
+  #footer #footer-nav .box:last-child {
+    padding-bottom: 1rem;
+  }
+  #footer #footer-nav .box:nth-child(2),
+  #footer #footer-nav .box:nth-child(3),
+  #footer #footer-nav .box:nth-child(4) {
+    padding-bottom: 1rem;
+  }
+  #footer #footer-nav .box:nth-child(2) ul li,
+  #footer #footer-nav .box:nth-child(3) ul li,
+  #footer #footer-nav .box:nth-child(4) ul li {
+    padding: 1.5rem 0;
+  }
+}
+@media (max-width: 64rem) {
+  #section-desktop .flex-columns {
+    padding: 5rem 0;
+  }
+  #section-desktop .flex-columns img {
+    width: 100%;
+  }
+  #section-desktop .flex-columns .box {
+    margin: 1rem;
+  }
+  #section-desktop .flex-columns .box h3 {
+    padding: 0.8rem 0;
   }
 }
 

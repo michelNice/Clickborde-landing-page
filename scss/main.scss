@@ -115,7 +115,7 @@ body{
       li{padding: 0 0.6rem;
         a{
           font-size: 1.5rem;
-          color:c.color(--Grayish-Blue);
+          color:c.color(--dark-grayish);
           &:hover{color:c.color(--strong-cyan);}
         }
       }
@@ -193,4 +193,40 @@ body{
   .box{@include flex-columns();}
 
 }
+
+#footer{
+  #footer-nav{
+    @include flex-columns();
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 3rem;
+    .box:nth-child(1),
+    .box:last-child{padding-bottom:1rem;}
+    
+    .box:nth-child(2),
+    .box:nth-child(3),
+    .box:nth-child(4){
+      padding-bottom:1rem;
+      ul li{padding:1.5rem 0;}
+    }
+  }
+}
+
+}
+
+
+@media(max-width:64rem){
+  #section-desktop{
+    .flex-columns{
+      padding:5rem 0;
+      img{width: 100%;}
+
+      .box{
+        margin:1rem;
+        h3{padding:0.8rem 0;}
+      }
+    }
+
+  }
 }
