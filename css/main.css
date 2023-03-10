@@ -54,7 +54,7 @@ p {
 }
 
 .img {
-  width: 43.75rem;
+  width: 50rem;
 }
 
 /*********************/
@@ -124,6 +124,9 @@ body {
 #section-desktop .flex-columns .box h3 {
   padding: 0.8rem 0;
 }
+#section-desktop .flex-columns .box p {
+  width: 75%;
+}
 
 /*********************/
 /*MOBILE*/
@@ -141,11 +144,15 @@ body {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  align-items: center;
   padding: 5rem 0;
-  margin-right: 7rem;
 }
 #section-workflow .flex-columns .box h3 {
   padding: 1rem 0;
+}
+#section-workflow .flex-columns .box p {
+  width: 63%;
+  margin-left: 6rem;
 }
 
 /*********************/
@@ -240,6 +247,9 @@ body {
   #section-desktop .flex-columns .box h3 {
     padding: 0.8rem 0;
   }
+  #section-desktop .flex-columns .box p {
+    width: 100%;
+  }
   #section-workflow .flex-columns {
     flex-direction: column;
     padding: 1;
@@ -247,6 +257,10 @@ body {
   }
   #section-workflow .flex-columns .box {
     margin-top: 3rem;
+  }
+  #section-workflow .flex-columns .box p {
+    width: 100%;
+    margin-left: 0;
   }
   #section-logos {
     flex-direction: column;

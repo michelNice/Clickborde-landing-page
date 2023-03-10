@@ -58,6 +58,8 @@ body{
     .box{
       margin:2rem 6rem;
       h3{padding:0.8rem 0;}
+
+      p{width:75%;}
     }
   }
 }
@@ -78,10 +80,15 @@ body{
   .flex-columns{
     @include flex-columns();
     text-align: center;
+    align-items: center;
     padding:5rem 0;
-    margin-right:7rem;
     .box{
       h3{padding:1rem 0;}
+
+      p{
+        width:63%;
+        margin-left:6rem;
+      }
     }
   }
 }
@@ -170,6 +177,8 @@ body{
     .box{
       margin: 2rem 1rem;
       h3{padding: 0.8rem 0;}
+
+      p{width:100%;}
     }
   }
 }
@@ -179,7 +188,14 @@ body{
     @include flex-columns();
     padding:1;
     margin-right:0;
-    .box{margin-top:3rem;}
+    .box{margin-top:3rem;
+    
+      p{
+        width:100%;
+        margin-left:0;
+      }
+    }
+
   }
 }
 
