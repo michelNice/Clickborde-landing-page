@@ -119,13 +119,13 @@ body {
   padding: 5rem 0;
 }
 #section-desktop .flex-columns .box {
-  margin: 2rem 6rem;
+  margin: 4rem 6rem;
 }
 #section-desktop .flex-columns .box h3 {
   padding: 0.8rem 0;
 }
 #section-desktop .flex-columns .box p {
-  width: 75%;
+  width: 76%;
 }
 
 /*********************/
