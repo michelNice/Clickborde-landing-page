@@ -18,10 +18,7 @@ body{
   justify-content:space-between;
 }
 
-@mixin row{
-  max-width:85rem;
-  margin:0 auto;
-}
+
 /*********************/
     /*HERO*/
 /*********************/
@@ -93,8 +90,7 @@ body{
 /*********************/
 #section-logos{
   @include flex-columns();
-  padding-top:5rem 0;
-  @include row();
+  padding:5rem;
 }
 /*********************/
       /*KEYBOARD*/

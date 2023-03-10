@@ -154,9 +154,7 @@ body {
 #section-logos {
   display: flex;
   justify-content: space-between;
-  padding-top: 5rem 0;
-  max-width: 85rem;
-  margin: 0 auto;
+  padding: 5rem;
 }
 
 /*********************/
