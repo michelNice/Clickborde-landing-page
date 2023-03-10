@@ -20,6 +20,14 @@
   opacity: 0.3;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .btn-ios {
   background: hsl(171, 66%, 44%);
 }
@@ -149,11 +157,57 @@ body {
   padding-top: 5rem 0;
 }
 
+/*********************/
+/*KEYBOARD*/
+/*********************/
 #section-keyboard {
   padding: 10rem 0;
+}
+#section-keyboard .box {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+}
+
+/*********************/
+/*FOOTER NAV*/
+/*********************/
+#footer #footer-nav {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(241, 241, 241);
+  padding: 2rem 3rem;
+}
+#footer #footer-nav .box:last-child ul {
+  display: flex;
+}
+#footer #footer-nav .box:last-child li {
+  padding: 0 0.6rem;
+}
+#footer #footer-nav .box:last-child li a {
+  font-size: 1.5rem;
+  color: hsl(201, 11%, 66%);
+}
+#footer #footer-nav .box:last-child li a:hover {
+  color: hsl(171, 66%, 44%);
+}
+#footer #footer-nav .box:nth-child(1) img {
+  width: 3.125rem;
+}
+#footer #footer-nav .box:nth-child(2),
+#footer #footer-nav .box:nth-child(3),
+#footer #footer-nav .box:nth-child(4) {
+  padding-bottom: 1rem;
+}
+#footer #footer-nav .box:nth-child(2) ul li a,
+#footer #footer-nav .box:nth-child(3) ul li a,
+#footer #footer-nav .box:nth-child(4) ul li a {
+  color: hsl(210, 10%, 33%);
+}
+#footer #footer-nav .box:nth-child(2) ul li a:hover,
+#footer #footer-nav .box:nth-child(3) ul li a:hover,
+#footer #footer-nav .box:nth-child(4) ul li a:hover {
+  color: hsl(171, 66%, 44%);
 }
 
 /*********************/
@@ -200,6 +254,12 @@ body {
   }
   #section-logos figure {
     padding: 3rem 0;
+  }
+  #section-keyboard {
+    padding: 10rem 0;
+  }
+  #section-keyboard .box {
+    flex-direction: column;
   }
 }
 
