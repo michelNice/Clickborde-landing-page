@@ -17,6 +17,11 @@ body{
   display:flex;
   justify-content:space-between;
 }
+
+@mixin row{
+  max-width:85rem;
+  margin:0 auto;
+}
 /*********************/
     /*HERO*/
 /*********************/
@@ -89,6 +94,7 @@ body{
 #section-logos{
   @include flex-columns();
   padding-top:5rem 0;
+  @include row();
 }
 /*********************/
       /*KEYBOARD*/
@@ -109,7 +115,7 @@ body{
   #footer-nav{
     @include flex-columns();
     background:rgb(241, 241, 241);
-    padding:2rem 3rem;
+    padding:2rem 5rem;
     .box:last-child{
       ul{display:flex;}
       li{padding: 0 0.6rem;
