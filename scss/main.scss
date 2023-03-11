@@ -19,6 +19,14 @@ body{
 }
 
 
+@mixin grid-columns{
+  display:grid;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 30rem 30rem 30rem;
+}
+
+
 /*********************/
     /*HERO*/
 /*********************/
@@ -75,7 +83,7 @@ body{
 }
 /*********************/
     /*WORKFLOW*/
-/*********************/
+/*********************
 #section-workflow{
   .flex-columns{
     @include flex-columns();
@@ -92,6 +100,27 @@ body{
     }
   }
 }
+*/
+
+#section-workflow{
+  .flex-columns{
+   margin: auto;
+   text-align: center;
+   display: grid;
+   justify-content: center;
+   grid-template-columns: 30rem 30rem 30rem;
+   padding: 5rem 0;
+   .box{
+    h3{padding:1rem 0}
+    p{
+      width: 70%;
+      text-align: center;
+      margin-left: 4.5rem;
+    }
+   }
+  }
+}
+
 /*********************/
       /*LOGOS*/
 /*********************/
@@ -182,7 +211,7 @@ body{
     }
   }
 }
-
+/*
 #section-workflow{
   .flex-columns{
     @include flex-columns();
@@ -198,7 +227,26 @@ body{
 
   }
 }
-
+*/
+#section-workflow{
+  .flex-columns{
+   margin: auto;
+   text-align: center;
+   display: grid;
+   justify-content: center;
+   grid-template-columns:1fr;
+   padding: 5rem 0;
+   .box{
+    margin-top: 3rem;
+    h3{padding:1rem 0}
+    p{
+      width:100%;;
+      text-align: center;
+      margin-left:0;
+    }
+   }
+  }
+}
 #section-logos{
   @include flex-columns();
   align-items: center;
