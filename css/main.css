@@ -45,7 +45,7 @@ p {
 .row {
   text-align: center;
   margin: auto;
-  padding-top: 4rem 0;
+  padding-top: 2rem 0;
 }
 .row p {
   width: 50%;
@@ -137,28 +137,7 @@ body {
   padding-top: 4rem;
 }
 
-/*********************/
-/*WORKFLOW*/
-/*********************
-#section-workflow{
-  .flex-columns{
-    @include flex-columns();
-    text-align: center;
-    align-items: center;
-    padding:5rem 0;
-    .box{
-      h3{padding:1rem 0;}
-
-      p{
-        width:63%;
-        margin-left:6rem;
-      }
-    }
-  }
-}
-*/
 #section-workflow .flex-columns {
-  margin: auto;
   text-align: center;
   display: grid;
   justify-content: center;
@@ -172,6 +151,7 @@ body {
   width: 70%;
   text-align: center;
   margin-left: 4.5rem;
+  line-height: 1.8rem;
 }
 
 /*********************/
@@ -180,7 +160,7 @@ body {
 #section-logos {
   display: flex;
   justify-content: space-between;
-  padding: 5rem;
+  padding: 5rem 4rem;
 }
 
 /*********************/
@@ -269,43 +249,19 @@ body {
   #section-desktop .flex-columns .box p {
     width: 100%;
   }
-  /*
-  #section-workflow{
-    .flex-columns{
-      @include flex-columns();
-      padding:1;
-      margin-right:0;
-      .box{margin-top:3rem;
-
-        p{
-          width:100%;
-          margin-left:0;
-        }
-      }
-
-    }
-  }
-  */
   #section-workflow .flex-columns {
     margin: auto;
-    text-align: center;
-    display: grid;
-    justify-content: center;
     grid-template-columns: 1fr;
-    padding: 5rem 0;
   }
   #section-workflow .flex-columns .box {
     margin-top: 3rem;
   }
-  #section-workflow .flex-columns .box h3 {
-    padding: 1rem 0;
-  }
   #section-workflow .flex-columns .box p {
     width: 100%;
-    text-align: center;
     margin-left: 0;
   }
   #section-logos {
+    padding: 2rem 4rem;
     flex-direction: column;
     align-items: center;
   }
