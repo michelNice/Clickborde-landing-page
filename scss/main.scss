@@ -81,6 +81,7 @@ body{
    grid-template-columns: 30rem 30rem 30rem;
    padding: 5rem 0;
    .box{
+    figure{padding-bottom:1rem;}
     h3{padding:1rem 0}
     p{
       width:70%;
@@ -189,6 +190,7 @@ body{
    grid-template-columns:1fr;
    .box{
     margin-top:3rem;
+    figure{padding-bottom:0;}
     p{
       width:100%;;
       margin-left:0;

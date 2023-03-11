@@ -144,6 +144,9 @@ body {
   grid-template-columns: 30rem 30rem 30rem;
   padding: 5rem 0;
 }
+#section-workflow .flex-columns .box figure {
+  padding-bottom: 1rem;
+}
 #section-workflow .flex-columns .box h3 {
   padding: 1rem 0;
 }
@@ -255,6 +258,9 @@ body {
   }
   #section-workflow .flex-columns .box {
     margin-top: 3rem;
+  }
+  #section-workflow .flex-columns .box figure {
+    padding-bottom: 0;
   }
   #section-workflow .flex-columns .box p {
     width: 100%;
