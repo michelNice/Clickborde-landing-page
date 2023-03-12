@@ -220,7 +220,7 @@ body {
 }
 
 /*********************/
-/*MOBILE*/
+/*TABLET*/
 /*********************/
 @media (max-width: 80rem) {
   #section-desktop .flex-columns .box p {
@@ -233,6 +233,9 @@ body {
     margin-left: 3rem;
   }
 }
+/*********************/
+/*MOBILE*/
+/*********************/
 @media (max-width: 46rem) {
   body {
     font-size: 1rem;
