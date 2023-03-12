@@ -64,9 +64,6 @@ p {
   .row p {
     width: 100%;
   }
-  .img {
-    width: 100%;
-  }
 }
 /*********************/
 /*SETTING UP*/
@@ -223,6 +220,12 @@ body {
 /*TABLET*/
 /*********************/
 @media (max-width: 80rem) {
+  .img {
+    width: 100%;
+  }
+  #section-desktop .flex-columns .box {
+    margin: 2rem 6rem;
+  }
   #section-desktop .flex-columns .box p {
     width: 100%;
   }
@@ -258,7 +261,7 @@ body {
     width: 100%;
   }
   #section-desktop .flex-columns .box {
-    margin: 2rem 1rem;
+    margin: 5rem 1rem;
   }
   #section-desktop .flex-columns .box h3 {
     padding: 0.8rem 0;

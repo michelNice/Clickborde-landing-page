@@ -150,10 +150,12 @@ body{
       /*TABLET*/
 /*********************/
 @media(max-width:80rem){
+  .img{width:100%;}
   
   #section-desktop{
     .flex-columns{
       .box{
+        margin: 2rem 6rem;
         p{width:100%;}
       }
     }
@@ -174,6 +176,7 @@ body{
 @media(max-width:46rem){
   body{font-size:1rem;}
 
+
 @mixin flex-columns{
   flex-direction:column;
 }
@@ -181,7 +184,6 @@ body{
 #hero{
   background-image:url(/img/bg-header-mobile.png);
   .content{
-    //img{width: 100%;}
     p{
       width:100%;
       padding: 2rem;
@@ -197,7 +199,7 @@ body{
     padding:5rem 0;
     img{width: 100%;}
     .box{
-      margin: 2rem 1rem;
+      margin:5rem 1rem;
       h3{padding: 0.8rem 0;}
 
       p{width:100%;}
