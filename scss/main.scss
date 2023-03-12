@@ -146,11 +146,31 @@ body{
     }
   }
 }
+
 /*********************/
       /*MOBILE*/
 /*********************/
+@media(max-width:80rem){
+  
+  #section-desktop{
+    .flex-columns{
+      .box{
+        p{width:100%;}
+      }
+    }
+  }
+  
+  #section-workflow{
+    .flex-columns{
+     grid-template-columns: 20rem 20rem 20rem;
+     .box{
+      p{margin-left:3rem;}
+     }
+    }
+  }
+}
 
-@media(max-width:48rem){
+@media(max-width:46rem){
   body{font-size:1rem;}
 
 @mixin flex-columns{
@@ -247,3 +267,5 @@ body{
 
   }
 }
+
+
