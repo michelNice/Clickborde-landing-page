@@ -184,7 +184,7 @@ body{
   
   #section-workflow{
     .flex-columns{
-     grid-template-columns: 20rem 20rem 20rem;
+     grid-template-columns:20rem 20rem 20rem;
      .box{
       p{margin-left:3rem;}
      }
@@ -270,7 +270,9 @@ body{
     .box:nth-child(3),
     .box:nth-child(4){
       padding-bottom:1rem;
-      ul li{padding:1.5rem 0;}
+      ul 
+      li{padding:2rem 0;
+      }
     }
   }
 }
