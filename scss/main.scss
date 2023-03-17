@@ -128,23 +128,41 @@ body{
           font-size: 1.5rem;
           color:c.color(--dark-grayish);
           &:hover{color:c.color(--strong-cyan);}
-          padding:0.5rem 0;
         }
       }
     }
-    .box:nth-child(1){
-      img{width:3.125rem;}
-    }
+    .box:nth-child(1){img{width:3.125rem;}}
     .box:nth-child(2),
     .box:nth-child(3),
     .box:nth-child(4){
       //padding-bottom:0rem;
       ul li{
-        padding:0 0;
+        padding:0 2rem;
         a{
           color:c.color(--dark-grayish);
           &:hover{color:c.color(--strong-cyan);}
         }
+      }
+    }
+  }
+  
+  #footer{
+    #footer-nav{
+      @include flex-columns();
+      background-color: hsla(201, 11%, 66%, .1);
+      .box:last-child{
+        ul{
+          display: flex;
+          li{
+            padding:0 0.6rem;
+            a{
+              font-size: 1.5rem;
+              color:c.color(--dark-grayish);
+              &:hover{color:c.color(--strong-cyan);}
+            }
+          }
+        }
+        .box:nth-child(1){img{width:3.125rem;}}
       }
     }
   }
