@@ -79,15 +79,16 @@ body{
    text-align: center;
    display: grid;
    justify-content: center;
+   display:grid;
    grid-template-columns: 30rem 30rem 30rem;
    padding: 5rem 0;
    .box{
     figure{padding-bottom:1rem;}
     h3{padding:1rem 0}
     p{
-      width:70%;
+      width:77%;
       text-align: center;
-      margin-left: 4.5rem;
+      margin-left: 4rem;
       line-height: 1.8rem
     }
    }
