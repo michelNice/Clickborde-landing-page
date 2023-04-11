@@ -15,6 +15,7 @@
   transition: all 0.3s;
   text-decoration: none;
   border-radius: 6.25rem;
+  box-shadow: 0px 4px 0px 0px rgba(27, 133, 117, 0.9);
 }
 .btn-mac:hover, .btn-ios:hover {
   opacity: 0.3;
