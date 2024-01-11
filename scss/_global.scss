@@ -26,11 +26,10 @@ $colors:(
     text-decoration:none;
     //border-radius: 6.25rem;
     /*box-shadow: 0px 4px 0px 0px rgba(27, 133, 117, 0.9);*/
-    &:hover{
-        opacity:0.3;
-    }
+    &:hover{opacity:0.3;}
 }
 ul{list-style: none;}
+
 a{text-decoration: none;}
 
 .btn{
@@ -67,9 +66,7 @@ p{color:color(--Grayish-Blue);}
 /*********************/
 
 @media(max-width:46rem){
-    .row{
-        p{width:100%;}
-    }
+    .row{p{width:100%;}}
 }
 
 
